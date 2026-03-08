@@ -57,6 +57,18 @@ li{
   margin:6px 0;
 }
 
+
+#secretBtn{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:35px;
+  opacity:0;
+  border:none;
+  cursor:pointer;
+}
+
 </style>
 
 </head>
@@ -74,7 +86,7 @@ li{
 
 <h1>Welcome To JPA SMP season 2</h1>
 
-<p>JPA Smp is the coolest realm. Just add <strong>CloudForest6919</strong> on Minecraft and I'll add you to the server</p>
+<p>JPA SMP is the coolest realm. Just add <strong>CloudForest6919</strong> on Minecraft and I'll add you.</p>
 
 <h2>Members</h2>
 
@@ -89,7 +101,9 @@ li{
   <li><strong>rowan</strong> — Alarium</li>
   <li><strong>Javaris</strong> — Chrome Zennix</li>
   <li><strong>Rhomeo</strong> — MtSwagtastic</li>
-  <li><strong>Mckenzie</strong> — primalSpinx5</li>
+
+  <!-- mckenzi  -->
+  <li id="secretMember" style="display:none;"><strong>Mckenzie</strong> — primalSpinx5</li>
 </ul>
 
 <p>There will be more but I'm too lazy to add them. I'll do it later.</p>
@@ -100,18 +114,27 @@ li{
 
 <h2>The Map:</h2>
 
-<p><em>Ill add it when you guys want it</em></p>
-<h2>Key Cordonates</h2>
-<ul>
-  <li>Spawn:0,0</li>
-  <li>A villgae around 120,130</li>
-</ul>
+<p><em>Removed for now</em></p>
 
 </div>
 
 
+<button id="secretBtn"></button>
+
+<script>
+
+document.getElementById("secretBtn").addEventListener("click", function(){
+
+  const member = document.getElementById("secretMember");
+  const button = document.getElementById("secretBtn");
+
+  member.style.display = "list-item";
+  button.style.display = "none";
+
+});
+
+</script>
+
 </body>
-<footer>
-  
-</footer>
 </html>
+
